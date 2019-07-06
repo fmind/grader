@@ -1,0 +1,12 @@
+.coverage
+*.egg-info/
+*.py[cod]
+.cache/
+.eggs/
+.mypy_cache/
+.pytest_cache/
+__pycache__/
+build/
+dist/
+venv/
+TODO.txt
