@@ -1,7 +1,8 @@
 black
 coverage
-isort
 hypothesis
+isort
+notebook
 mypy
 pip>=18
 pylint

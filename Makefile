@@ -6,6 +6,7 @@ venv:
 	python3.7 -m venv venv --clear
 	venv/bin/pip install --editable .
 	venv/bin/pip install -r requirements.txt
+	jupyter nbextension enable --py widgetsnbextension --sys-prefix
 
 test: venv
 	venv/bin/pytest tests
@@ -31,6 +32,9 @@ add:
 
 hook:
 	git config core.hooksPath hooks/
+
+work:
+	venv/bin/jupyter notebook
 
 clean:
 	find . -name '*.whl' -exec rm -f {} +
