@@ -18,6 +18,7 @@ META = dict(
     entry_points={"console_scripts": ["grader=grader.__main__:main"]},
     python_requires=">=3.7",
     install_requires=[
+        'plotly_express',
         'matplotlib',
         'ipywidgets',
         'mimesis',

@@ -12,7 +12,7 @@ test: venv
 	venv/bin/pytest tests
 
 type: venv
-	venv/bin/mypy ${PACKAGE}
+	venv/bin/mypy --ignore-missing-imports ${PACKAGE}
 
 lint: venv
 	venv/bin/pylint ${PACKAGE}

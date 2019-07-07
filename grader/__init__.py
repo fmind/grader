@@ -1,7 +1,7 @@
 """Generators of the project."""
 
-from mimesis import Person  # type: ignore
-from numpy.random import normal  # type: ignore
+from mimesis import Person
+from numpy.random import normal
 
 
 def generate_grade(mean: float = 10.0, std: float = 3.0) -> float:
